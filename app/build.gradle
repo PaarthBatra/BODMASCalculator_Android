@@ -1,38 +1,58 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 26
+    namespace 'com.versionpb.bodmascalculator'
+    compileSdk 34
+
     defaultConfig {
         applicationId "com.versionpb.bodmascalculator"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdk 21
+        targetSdk 34
         versionCode 5
         versionName "1.5"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     packagingOptions {
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/INDEX.LIST'
+        resources {
+            excludes += ['META-INF/LICENSE', 'META-INF/INDEX.LIST']
+        }
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-    implementation 'com.google.android:flexbox:1.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'com.android.support:support-v4:26.0.+'
-    compile 'com.udojava:EvalEx:2.0'
-    compile 'com.google.android.gms:play-services-ads:8.4.0'
 
+    // AndroidX (replaces android.support.*)
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
+    // FlexBox
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    // Math expression evaluator
+    implementation 'com.udojava:EvalEx:2.7'
+
+    // AdMob
+    implementation 'com.google.android.gms:play-services-ads:23.4.0'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
