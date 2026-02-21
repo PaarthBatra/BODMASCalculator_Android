@@ -980,7 +980,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Cls --> MainActivity --> Fn --> onCreate :::: Just After fnding all layout views ");
 
         TextView link = (TextView) findViewById(R.id.textViewLink);
-        String linkText = "<a href='https://www.versionpb.com'>www.versionpb.com</a>";
+        String linkText = "<a href='https://www.versionpb.co.in'>www.versionpb.co.in</a>";
         link.setText(Html.fromHtml(linkText));
         link.setMovementMethod(LinkMovementMethod.getInstance());
 
