@@ -2,7 +2,16 @@
 
 ---
 
-## [Unreleased] — Build Modernisation — 21 Feb 2026
+## [1.5.1] — 21 Feb 2026
+
+### Changed
+- Footer link updated from `www.versionpb.com` to `www.versionpb.co.in`
+- Version display on calculator header changed from `Ver 1.5` → `V 1.5.1`
+- `versionCode` bumped from 5 → 6
+
+---
+
+## [Build Modernisation — Gradle & AndroidX Migration] — 21 Feb 2026
 
 Major upgrade of the entire build toolchain and dependency stack. No functional changes to the calculator logic.
 

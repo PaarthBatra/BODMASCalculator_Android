@@ -3,7 +3,7 @@
 A fully-featured BODMAS-compliant calculator for Android, written in Java and built with Android Studio. Available on the Google Play Store.
 
 **Package:** `com.versionpb.bodmascalculator`  
-**Current Version:** 1.5 (versionCode 5)  
+**Current Version:** 1.5.1 (versionCode 6)  
 **Min SDK:** 21 (Android 5.0 Lollipop)  
 **Target SDK:** 34 (Android 14)
 
