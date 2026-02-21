@@ -1,0 +1,106 @@
+Version 1.0
+Project Name : Simple Calculator
+1. Basic Button added 0 to 9 , . , + , - , / , x , C and = total 17 buttons , 1 Text Edit and one Edit View
+2. BODMAS Operations Working s of now
+
+3. Next Version : Change Name to BODMAS Calcualtor
+
+Current Version
+Version 1.1
+Revision 1
+Project Name : BODMAS Calculator
+Package Name : com.versionpb.bodmascalculator
+
+Changes :
+1. Project name chanegd to BODMAS Calculator
+2. Result will be a Floating point :usng mxparser now to calculate expressions and not BeanShell like in version 1.0 R - 0
+3. Can add anything after . also
+4. mxparser to be used to evaluate Expressions now and not BeanShell Reference
+    : https://stackoverflow.com/questions/3422673/evaluating-a-math-expression-given-in-string-form/3423360
+    : http://mathparser.org/
+    : https://github.com/mariuszgromada/MathParser.org-mXparser/releases
+    Using Jar for v 1.8
+5. Double time = crashes App Fixed
+6. 33+ 6636626266 results in value with E 33+63336626266+ i.e. 6.3336626299E10 -- Fixed -- Doesnt work if last values are multiples of 5 and gives output in 5 or error
+    https://github.com/uklimaschewski/EvalEx
+7. Now Using Evalx to ifix conversion of Exponential values in big decimal
+8. If after decimals its 0000 , keep it without .
+9. Text View backgrund colour  =aed6f1
+10. If last value in textview is + when pressed = , remove it and then calculate and not throw error
+11 If there is 0000 after . then remove them -- DOne
+12 : When more data is entered in text View : Text Size is 40 by defult for textview , it becomes small when lines are 2 to 20 and then to 15 and finally 8
+13. When pressed back button once see toast , when twice exit
+14.65*6 results in 3.9E+2 .... Need to change the expression Evaluater ...   actually it gives error whenever we have output with zeros , 3.9E+2 here means 390 i.e. 3.9 * 10 raise to power 2
+ as 3.9E+2 means 3.9 * 100 -- Fixed ... Casted 3.9E+2 to big Int and then to String in case there was an E in result
+Freezing this version i.e.  Version 1.1
+
+Known Bugs
+1. ToDo: Cant ENter 0.2 as value in calculator
+
+
+Current Version
+Version 1.2
+VersionCode 3
+1. changes look and feel and made GUI responsive
+2. Landscape orientation is still disabled because , on going from one orientation to another screen values goes blank .
+3. Added brackets and backspace
+4. Backspace logic done
+5. Brackets Implementation done and some use cases written are also passed
+
+
+This New Version
+        versionCode 4
+        versionName "1.3"
+1. Add of bottom banner Ad
+
+used below Tut
+https://www.androidtutorialpoint.com/intermediate/adding-google-admob-ads-android-appbanner-interstitial-ads/
+
+apk at D:\Java\android\BODMASCalculator\app\release
+
+This release requires permission to access INTERNET and ACCESS_NETWORK_STATE
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Version Name 1.5
+Version Code : 5
+
+Changes :
+1. Should be able to add 0.2 in calci  // Done
+2. should eb able to add -1 in calci
+   use Cases : -6x 6 : OK
+            -6 X -6
+            615 X 03
+            2 + 3 x 5  ==17
+            3 + 2    ==5
+            5 - 2  == 3
+            3 * 7
+           99/11
+           (78 + 6 )
+           3 + 5 – 10 ==-2
+           3 + 2 * 5  == 13
+           8 * 7 / 2  == 28
+           (7) ==7
+           (7+3) ==10
+           ( 8 * 3 ) + 2 == 26
+           2 + ( 8 * 3 ) == 26
+           2 + 3 * 4 + (2 + 1) == 17
+
+           0.2 X 0.8 == 0.16
+           -56 x 2 = -112
+
+           5^2 = 25
+           2^2 X 3 = 12
+           0.2 ^ 2 = 0.4
+
+3. Show Version number on top of calculator
+4. Add ^ as power of button   -- Working on this  // DOne
+5. Use S as Skins Button    -- Working on this find toolbar and see how to change color of its BG from code // Done
+6. Put $ as Interstitial Ad Ad  // DOne
+7. Make V as Vedio Ad /// this will show only interstitial Ad only
+8. ... as help menu on top // Not Now
+9. Plus sign neeche  // DOne
+
+
+what next ?
+How about percentage

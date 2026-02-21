@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BODMAS Calculator</string>
+    <string name="Version">Ver 1.5</string>
+    <string name="exit_msg">Press Back Again To Exit</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_dot">.</string>
+    <string name="_0">0</string>
+    <string name="_equal">=</string>
+    <string name="_C">C</string>
+    <string name="_del">\Del</string>
+    <string name="_buttonLBracket">(</string>
+    <string name="_buttonRBracket">)</string>
+    <string name="_add">+</string>
+    <string name="_sub">-</string>
+    <string name="_mul">x</string>
+    <string name="_div">\u00F7</string>
+    <string name="_off">^</string>
+    <string name="_Skins">S</string>
+    <string name="_Inter">$</string>
+    <string name="_Vedio">\u20B9</string>
+    <string name="ad_id_banner">ca-app-pub-2542346272130601/5532542528</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-2542346272130601/9968568830</string>
+
+    <string name="Colorpink">#FF69B4</string>
+    <string name="colorPrimaryDark">#005B9A</string>
+    <string name ="red">#FF0000</string>
+    <string name ="black">#000000</string>
+
+    <string name ="white">#FFFFFF</string>
+
+</resources>

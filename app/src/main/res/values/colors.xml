@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#005B9A</color>
+<color name="colorPrimaryDark">#005B9A</color>
+<color name="colorAccent">#000000</color>
+<color name="TextViewBg">#E8EAFA</color>
+<color name="EditTextBg">#FFFFFF</color>
+    <color name="ButtonColor">#2e86c1</color>
+    <color name="LinkColour">#000000</color>
+    <color name ="OperatorsBG"> #2e86c1 </color>
+    <color name ="OperatorsFG">#FFFFFF</color>
+    <color name ="EqualBG">#FF9800</color>
+    <color name ="pink">#FF69B4</color>
+    <color name ="red">#FF0000</color>
+    <color name ="black">#000000</color>
+    <color name ="white">#FFFFFF</color>
+    <color name ="lavenderblush">#FFF0F5</color>
+
+</resources>
