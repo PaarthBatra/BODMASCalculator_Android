@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">BODMAS Calculator</string>
-    <string name="Version">V 1.5.2</string>
+    <string name="Version">V 1.5.3</string>
     <string name="exit_msg">Press Back Again To Exit</string>
     <string name="_7">7</string>
     <string name="_8">8</string>

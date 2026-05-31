@@ -4,6 +4,7 @@
     android:shrinkColumns="*"
     android:stretchColumns="*"
     android:background="@color/colorPrimaryDark"
+    android:fitsSystemWindows="true"
     android:weightSum="160">
 
     <!--     Row 1 Starts From Here -->
@@ -39,6 +40,10 @@
             android:layout_height="match_parent"
             android:background="@color/EditTextBg"
             android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions"
             android:gravity="bottom"
             android:layout_span="4"
             android:lines="2"

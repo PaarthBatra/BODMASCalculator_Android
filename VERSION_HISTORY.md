@@ -2,6 +2,15 @@
 
 ---
 
+## [1.5.3] — 31 May 2026
+
+### Fixed
+- Fixed critical layout overlap on Android 15 devices where calculation inputs were rendered behind the system status/notification bar. Enabled `fitsSystemWindows` on the root layouts.
+- Disabled system-level keyboard suggestions, autofill indexing, and unwanted touch focus overlay triggers on the main display text field.
+- `versionCode` bumped from 7 → 8
+
+---
+
 ## [1.5.2] — 31 May 2026
 
 ### Changed
@@ -9,6 +18,7 @@
 
 ### Fixed
 - Fixed project loading issue in Android Studio by restructuring the directory layout (moved nested project files to root).
+- Upgraded targetSdk and compileSdk versions to 35 (Android 15) to meet Google Play Console requirements.
 - Upgraded Java compiler compatibility version from Java 8 to Java 17.
 - Resolved compile-time warnings and deprecated API usages (`ContextCompat.getColor`, conditional version checks for `Html.fromHtml`, and `@SuppressWarnings` for onBackPressed).
 - `versionCode` bumped from 6 → 7

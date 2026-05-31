@@ -8,7 +8,7 @@ This document contains the updated copy and layout for your product page at [ver
 
 **The Ultimate Expression Calculator for High-Precision Mathematics**
 
-Welcome to the official home of the **BODMAS Calculator for Android** (Version 1.5.2). Built for students, engineers, and anyone tired of standard calculators failing on complex expressions, this application evaluates full mathematical equations following the strict rules of BODMAS precedence.
+Welcome to the official home of the **BODMAS Calculator for Android** (Version 1.5.3). Built for students, engineers, and anyone tired of standard calculators failing on complex expressions, this application evaluates full mathematical equations following the strict rules of BODMAS precedence.
 
 * **Google Play Store:** [Download App](https://play.google.com/store/apps/details?id=com.versionpb.bodmascalculator)
 * **GitHub Repository:** [View Source Code](https://github.com/PaarthBatra/BODMASCalculator_Android)
@@ -52,10 +52,10 @@ $$\text{Brackets} \rightarrow \text{Orders/Exponents} \rightarrow \text{Division
 
 ---
 
-## Technical Specifications (v1.5.2)
+## Technical Specifications (v1.5.3)
 
 * **Minimum SDK:** API 21 (Android 5.0 Lollipop)
-* **Target SDK:** API 34 (Android 14)
+* **Target SDK:** API 35 (Android 15)
 * **Core Technology:** Written in Java (JDK 17 target compatibility)
 * **Active Dependencies:** 
   * `androidx.appcompat:appcompat:1.7.0`
@@ -66,7 +66,11 @@ $$\text{Brackets} \rightarrow \text{Orders/Exponents} \rightarrow \text{Division
 
 ## Version History & Changelog
 
-### v1.5.2 (Latest Release)
+### v1.5.3 (Latest Release)
+* **Android 15 Fix**: Patched a critical layout bug where display items were rendered behind the system status/notification bar on Android 15 (API 35) by correctly handling edge-to-edge window insets.
+* **Autofill & Focus Fix**: Disabled predictive keyboard suggestions and touch focus events on the calculation display view.
+
+### v1.5.2
 * **Build Modernization**: Upgraded the compilation toolchain to Java 17 for better runtime efficiency on newer Android devices.
 * **Bug Fixes**: Restructured root build directories to fix importing errors in Android Studio.
 * **Warnings Cleanup**: Resolved obsolete option warnings and deprecated API references (e.g., migrated to `ContextCompat` and SDK conditional `Html.fromHtml` modes).
