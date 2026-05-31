@@ -2,6 +2,19 @@
 
 ---
 
+## [1.5.2] — 31 May 2026
+
+### Changed
+- Commented out AdMob advertising (Banner and Interstitial ads) from the layout and code logic to prevent unnecessary ad requests during local build/development.
+
+### Fixed
+- Fixed project loading issue in Android Studio by restructuring the directory layout (moved nested project files to root).
+- Upgraded Java compiler compatibility version from Java 8 to Java 17.
+- Resolved compile-time warnings and deprecated API usages (`ContextCompat.getColor`, conditional version checks for `Html.fromHtml`, and `@SuppressWarnings` for onBackPressed).
+- `versionCode` bumped from 6 → 7
+
+---
+
 ## [1.5.1] — 21 Feb 2026
 
 ### Changed

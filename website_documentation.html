@@ -1,0 +1,119 @@
+<h1>BODMAS Calculator for Android</h1>
+
+<p><strong>The Ultimate Expression Calculator for High-Precision Mathematics</strong></p>
+
+<p>Welcome to the official home of the <strong>BODMAS Calculator for Android</strong> (Version 1.5.2). Built for students, engineers, and anyone tired of standard calculators failing on complex expressions, this application evaluates full mathematical equations following the strict rules of BODMAS precedence.</p>
+
+<ul>
+    <li><strong>Google Play Store:</strong> <a href="https://play.google.com/store/apps/details?id=com.versionpb.bodmascalculator" target="_blank" rel="noopener">Download App</a></li>
+    <li><strong>GitHub Repository:</strong> <a href="https://github.com/PaarthBatra/BODMASCalculator_Android" target="_blank" rel="noopener">View Source Code</a></li>
+</ul>
+
+<hr />
+
+<h2>Why BODMAS Calculator?</h2>
+
+<p>Most standard built-in phone calculators evaluate equations step-by-step as you type, ignoring standard mathematical precedence rules, or force results into scientific notation (like <code>1.2E10</code>).</p>
+
+<p>BODMAS Calculator processes your <strong>entire expression</strong> as a single cohesive string, evaluating operators in their correct mathematical order:</p>
+
+<p style="text-align: center; font-weight: bold; font-size: 1.1em; padding: 10px; background-color: #f7f7f7; border-radius: 4px;">
+    Brackets &rarr; Orders/Exponents (&circ;) &rarr; Division (&divide;) &rarr; Multiplication (&times;) &rarr; Addition (+) &rarr; Subtraction (-)
+</p>
+
+<h3>Visual Breakdown: Standard Calculator vs. BODMAS Calculator</h3>
+
+<table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: left;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th>Equation</th>
+            <th>Default Android Calculator</th>
+            <th>VersionPB BODMAS Calculator</th>
+            <th>Correct Behavior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>3 + 2 &times; 5</strong></td>
+            <td>25 <em>(Evaluates 3 + 2 first)</em></td>
+            <td style="color: green; font-weight: bold;">13</td>
+            <td><strong>Correct (BODMAS)</strong></td>
+        </tr>
+        <tr>
+            <td><strong>10,000,000,000 &times; 9,999,999,999</strong></td>
+            <td>1.0E20 <em>(Scientific notation)</em></td>
+            <td style="color: green; font-weight: bold;">99999999990000000000</td>
+            <td><strong>High Precision</strong></td>
+        </tr>
+        <tr>
+            <td><strong>2 &circ; 3 + (4 &times; 5)</strong></td>
+            <td>Varies or requires scientific mode</td>
+            <td style="color: green; font-weight: bold;">28</td>
+            <td><strong>Correct (BODMAS)</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<h2>Key Features</h2>
+
+<h3>1. High-Precision Calculator Engine</h3>
+<ul>
+    <li><strong>EvalEx Engine:</strong> Powered by the advanced <code>EvalEx</code> library, using Java's <code>BigDecimal</code> with <strong>128-bit precision</strong> to prevent rounding errors on huge numbers or recurring decimals.</li>
+    <li><strong>No Exponents (E):</strong> Large results are written out in full, human-readable numbers instead of confusing scientific notations.</li>
+    <li><strong>Smart Decimal Trimming:</strong> Displays up to 4 decimal places with auto-trimming for clean, clutter-free results.</li>
+</ul>
+
+<h3>2. Evolving &amp; Responsive UI</h3>
+<ul>
+    <li><strong>Live Expression Display:</strong> The top screen tracks the full equation as it expands (e.g. <code>12 + 34 &times; (5 - 2)</code>), while the bottom display shows the current input.</li>
+    <li><strong>Auto-Shrinking Font Size:</strong> As your expression grows longer, the text automatically shrinks to ensure the entire equation remains visible without overlapping or wrapping off-screen.</li>
+    <li><strong>Quick Theme Switcher (S):</strong> Easily toggle between two contrasting styles: Classic Professional Blue and Modern Vibrant Pink/Red.</li>
+    <li><strong>Fully Responsive:</strong> Built using a weighted layout that automatically scales to fit various screen sizes, ratios, and orientations (portrait and landscape).</li>
+</ul>
+
+<h3>3. Smart Usability Utilities</h3>
+<ul>
+    <li><strong>Intelligent Backspace (Del):</strong> Safely delete characters one by one. The app tracks state history to ensure backspace behaves logically across numbers, operators, brackets, and negative values.</li>
+    <li><strong>Double-Back Exit:</strong> Prevent accidentally closing the calculator mid-calculation. A quick double-tap on your device's back button is required to exit.</li>
+</ul>
+
+<hr />
+
+<h2>Technical Specifications (v1.5.2)</h2>
+<ul>
+    <li><strong>Minimum SDK:</strong> API 21 (Android 5.0 Lollipop)</li>
+    <li><strong>Target SDK:</strong> API 34 (Android 14)</li>
+    <li><strong>Core Technology:</strong> Written in Java (JDK 17 target compatibility)</li>
+    <li><strong>Active Dependencies:</strong>
+        <ul>
+            <li><code>androidx.appcompat:appcompat:1.7.0</code></li>
+            <li><code>com.udojava:EvalEx:2.7</code></li>
+            <li><code>com.google.android.flexbox:flexbox:3.0.0</code></li>
+        </ul>
+    </li>
+</ul>
+
+<hr />
+
+<h2>Version History &amp; Changelog</h2>
+
+<h3>v1.5.2 (Latest Release)</h3>
+<ul>
+    <li><strong>Build Modernization:</strong> Upgraded the compilation toolchain to Java 17 for better runtime efficiency on newer Android devices.</li>
+    <li><strong>Bug Fixes:</strong> Restructured root build directories to fix importing errors in Android Studio.</li>
+    <li><strong>Warnings Cleanup:</strong> Resolved obsolete option warnings and deprecated API references (e.g., migrated to ContextCompat and SDK conditional Html.fromHtml modes).</li>
+</ul>
+
+<h3>v1.5.1</h3>
+<ul>
+    <li><strong>Link Update:</strong> Updated footer hyperlink endpoints to <code>versionpb.co.in</code>.</li>
+    <li><strong>AdMob APIs:</strong> Migrated to the modern, non-blocking Google AdMob API client structure.</li>
+</ul>
+
+<h3>v1.5.0</h3>
+<ul>
+    <li>Added exponentiation (<code>&circ;</code>) operator support.</li>
+    <li>Integrated the double-theme system switcher.</li>
+</ul>

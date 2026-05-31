@@ -3,7 +3,7 @@
 A fully-featured BODMAS-compliant calculator for Android, written in Java and built with Android Studio. Available on the Google Play Store.
 
 **Package:** `com.versionpb.bodmascalculator`  
-**Current Version:** 1.5.1 (versionCode 6)  
+**Current Version:** 1.5.2 (versionCode 7)  
 **Min SDK:** 21 (Android 5.0 Lollipop)  
 **Target SDK:** 34 (Android 14)
 
@@ -31,8 +31,8 @@ A fully-featured BODMAS-compliant calculator for Android, written in Java and bu
 - **Double-back to exit** — pressing Back twice within 2 seconds exits the app, with a toast message on the first press
 
 ### Advertising (AdMob)
-- **Banner ad** — persistent banner at the bottom of the screen (AdMob)
-- **Interstitial ad** — full-screen interstitial ad, triggered via the `$` and `₹` buttons, with auto-reload on dismissal
+- **Banner ad** — persistent banner at the bottom of the screen (AdMob) *[Note: currently commented out/disabled for local development]*
+- **Interstitial ad** — full-screen interstitial ad, triggered via the `$` and `₹` buttons, with auto-reload on dismissal *[Note: currently commented out/disabled for local development]*
 
 ---
 
@@ -76,7 +76,7 @@ app/src/main/
 | `compileSdk` | 34 |
 | `targetSdk` | 34 |
 | `minSdk` | 21 |
-| Java compatibility | 1.8 |
+| Java compatibility | 17 |
 
 ---
 
