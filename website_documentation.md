@@ -42,9 +42,9 @@ $$\text{Brackets} \rightarrow \text{Orders/Exponents} \rightarrow \text{Division
 
 ### 2. Evolving & Responsive UI
 * **Live Expression Display**: The top screen tracks the full equation as it expands (e.g. `12 + 34 × (5 - 2)`), while the bottom display shows the current input.
-* **Auto-Shrinking Font Size**: As your expression grows longer, the text automatically shrinks (`40sp` $\rightarrow$ `20sp` $\rightarrow$ `15sp` $\rightarrow$ `8sp`) to ensure the entire equation remains visible without overlapping or wrapping off-screen.
+* **Auto-Sizing Font**: As your expression grows longer, the text automatically scales (between 8sp and 40sp) to keep the entire equation visible without overlapping or wrapping off-screen.
 * **Quick Theme Switcher (S)**: Easily toggle between two contrasting styles: Classic Professional Blue and Modern Vibrant Pink/Red.
-* **Fully Responsive**: Built using a weighted layout that automatically scales to fit various screen sizes, ratios, and orientations (portrait and landscape).
+* **Fully Responsive**: Built using a weighted layout that automatically scales to fit various screen sizes and aspect ratios.
 
 ### 3. Smart Usability Utilities
 * **Intelligent Backspace (Del)**: Safely delete characters one by one. The app tracks state history to ensure backspace behaves logically across numbers, operators, brackets, and negative values.
@@ -59,8 +59,8 @@ $$\text{Brackets} \rightarrow \text{Orders/Exponents} \rightarrow \text{Division
 * **Core Technology:** Written in Java (JDK 17 target compatibility)
 * **Active Dependencies:** 
   * `androidx.appcompat:appcompat:1.7.0`
+  * `androidx.core:core:1.13.1`
   * `com.udojava:EvalEx:2.7`
-  * `com.google.android.flexbox:flexbox:3.0.0`
 
 ---
 
@@ -69,6 +69,7 @@ $$\text{Brackets} \rightarrow \text{Orders/Exponents} \rightarrow \text{Division
 ### v1.5.3 (Latest Release)
 * **Android 15 Fix**: Patched a critical layout bug where display items were rendered behind the system status/notification bar on Android 15 (API 35) by correctly handling edge-to-edge window insets.
 * **Autofill & Focus Fix**: Disabled predictive keyboard suggestions and touch focus events on the calculation display view.
+* **Stability & Maintenance**: Re-architected the calculator into a dedicated, fully unit-tested evaluation engine and input handler for more reliable results, modernized the display to use native auto-sizing text, and removed unused code for a leaner, faster app.
 
 ### v1.5.2
 * **Build Modernization**: Upgraded the compilation toolchain to Java 17 for better runtime efficiency on newer Android devices.

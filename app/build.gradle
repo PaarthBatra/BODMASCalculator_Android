@@ -10,9 +10,14 @@ android {
         applicationId "com.versionpb.bodmascalculator"
         minSdk 21
         targetSdk 35
-        versionCode 9
-        versionName "1.5.3"
+        versionCode 10
+        versionName "1.5.4"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
     }
 
     packagingOptions {
@@ -40,10 +45,6 @@ dependencies {
     // AndroidX (replaces android.support.*)
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'androidx.core:core:1.13.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    // FlexBox
-    implementation 'com.google.android.flexbox:flexbox:3.0.0'
 
     // Math expression evaluator
     implementation 'com.udojava:EvalEx:2.7'

@@ -1,7 +1,10 @@
+
 <resources>
     <string name="app_name">BODMAS Calculator</string>
-    <string name="Version">V 1.5.3</string>
+    <string name="Version">V 1.5.4</string>
     <string name="exit_msg">Press Back Again To Exit</string>
+    <string name="ad_not_ready_interstitial">Ad not ready yet. Try again in a moment.</string>
+    <string name="ad_not_ready_rewarded">Video ad not ready yet. Try again in a moment.</string>
     <string name="_7">7</string>
     <string name="_8">8</string>
     <string name="_9">9</string>
@@ -28,10 +31,12 @@
     <string name="_Vedio">\u20B9</string>
     <string name="ad_id_banner">ca-app-pub-2542346272130601/5532542528</string>
     <string name="interstitial_ad_unit_id">ca-app-pub-2542346272130601/9968568830</string>
-    <!-- AdMob App ID: Replace with your real App ID from AdMob console > Apps > App ID
-         Format is ca-app-pub-XXXXXXXXXXXXXXXX~XXXXXXXXXX (note the ~ not /)
-         Using AdMob test App ID below — MUST change before Play Store release -->
-    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="rewarded_ad_unit_id">ca-app-pub-2542346272130601/1331868313</string>
+    <!-- Google sample ad units — used automatically in debug builds -->
+    <string name="ad_id_banner_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id_test">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="rewarded_ad_unit_id_test">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="admob_app_id">ca-app-pub-2542346272130601~3316199455</string>
 
     <string name="Colorpink">#FF69B4</string>
     <string name="colorPrimaryDark">#005B9A</string>

@@ -2,6 +2,43 @@
 
 ---
 
+## [1.5.4] — 4 Jul 2026
+
+### Advertising (AdMob)
+- Re-enabled AdMob: banner (above footer link), rewarded video on `$`, interstitial on `₹`.
+- Programmatic banner `AdView` (avoids XML init-order crashes); debug builds use Google test ad units, release uses production IDs.
+- Production App ID, banner, interstitial, and rewarded ad unit IDs configured in `strings.xml`.
+
+---
+
+## [Unreleased] — Architecture Refactor & Code Health
+
+Internal refactor of the 1.5.3 codebase. No user-facing behaviour changes — the calculator computes and displays exactly as before — but the code is now modular, unit-tested, and free of dead code. Verified green with `:app:testDebugUnitTest`, `:app:assembleDebug`, and `:app:assembleRelease`.
+
+### Architecture
+- Extracted all evaluation logic out of `MainActivity` into a new pure-Java **`CalculatorEngine`** (operator normalization, `EvalEx` evaluation, 4-dp truncation / trailing-zero trimming / no scientific notation, trailing-operator stripping, and lenient recovery from a dangling leading `(`).
+- Extracted all input handling into a new **`CalculatorState`** state machine that returns a `UiUpdate` hint (`NONE`/`EDIT_ONLY`/`TEXT_ONLY`/`BOTH`) so the Activity only redraws what changed.
+- `MainActivity` is now a thin UI layer that delegates to `CalculatorState`.
+
+### Testing
+- Added JUnit 4 unit tests: `CalculatorEngineTest` and `CalculatorStateTest` covering documented use cases, number formatting, error handling, backspace/decimal/operator edge cases, and full expression sequences.
+- Removed the placeholder `ExampleUnitTest`.
+
+### API & UI Modernization
+- Migrated the display field from a disabled `EditText` to a `TextView` (removed focus/autofill/keyboard workarounds).
+- Replaced the manual font-shrinking logic with native uniform auto-sizing (`autoSizeTextType="uniform"`, 8sp–40sp).
+- Updated deprecated `fill_parent` → `match_parent` throughout the layout.
+- Adopted **View Binding** (`buildFeatures.viewBinding`), replacing `findViewById` and casts; enabled `buildFeatures.buildConfig`.
+- Migrated `onBackPressed()` to `OnBackPressedDispatcher`; `new Handler()` → `new Handler(Looper.getMainLooper())`.
+- Gated verbose `log()` output behind `BuildConfig.DEBUG`.
+
+### Dead Code Removal
+- Removed commented-out AdMob fields/methods/listeners and unused imports from `MainActivity`.
+- Removed unused dependencies: `androidx.constraintlayout:constraintlayout` and `com.google.android.flexbox:flexbox`.
+- Deleted orphaned layouts: `layout-land/activity_main.xml`, `activity_main_nonresponsive.xml`, and `responsivetablelayout.xml`.
+
+---
+
 ## [1.5.3] — 31 May 2026
 
 ### Fixed

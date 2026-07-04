@@ -1,8 +1,13 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TableLayout
     android:id="@+id/rootLayout"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
     android:shrinkColumns="*"
     android:stretchColumns="*"
     android:background="@color/colorPrimaryDark"
@@ -18,7 +23,7 @@
 
     <!--     Row 1 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20"
@@ -26,33 +31,31 @@
 
     <TextView
         android:id="@+id/infoTextView"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/TextViewBg"
         android:layout_span="4"
         android:textColor="#000000"
         android:maxLines="5"
-        android:textSize="40sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeStepGranularity="1sp"
         />
     </TableRow>
 
     <!--     Row 2 Starts From Here -->
 
         <TableRow
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_weight="20">
-    <EditText
+    <TextView
         android:id="@+id/edt1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/EditTextBg"
-        android:enabled="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:importantForAutofill="no"
-        android:inputType="textNoSuggestions"
         android:gravity="bottom"
         android:layout_span="4"
         android:lines="2"
@@ -65,7 +68,7 @@
 
     <!--     Row 3 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -75,7 +78,7 @@
         <Button
             android:id="@+id/buttonLBracket"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_buttonLBracket"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -88,7 +91,7 @@
         <Button
             android:id="@+id/buttonRBracket"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_buttonRBracket"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -99,7 +102,7 @@
         <Button
             android:id="@+id/buttonC"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_C"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -113,7 +116,7 @@
         <Button
             android:id="@+id/buttondel"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_del"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -127,7 +130,7 @@
 
     <!--     Row 4 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20"
@@ -136,7 +139,7 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_7"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -149,7 +152,7 @@
         <Button
             android:id="@+id/button8"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_8"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -161,7 +164,7 @@
         <Button
             android:id="@+id/button9"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_9"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -174,7 +177,7 @@
         <Button
             android:id="@+id/buttondiv"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_div"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -188,7 +191,7 @@
 
     <!--     Row 5 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -196,7 +199,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_4"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -208,7 +211,7 @@
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_5"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -220,7 +223,7 @@
         <Button
             android:id="@+id/button6"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_6"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -233,7 +236,7 @@
         <Button
             android:id="@+id/buttonmul"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_mul"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -248,7 +251,7 @@
 
     <!--     Row 6 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -257,7 +260,7 @@
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_1"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -269,7 +272,7 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_2"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -281,7 +284,7 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_3"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -293,7 +296,7 @@
         <Button
             android:id="@+id/buttonsub"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_sub"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -308,7 +311,7 @@
 
     <!--     Row 7 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -317,7 +320,7 @@
         <Button
             android:id="@+id/button10"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_dot"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -329,7 +332,7 @@
         <Button
             android:id="@+id/button0"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_0"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -343,7 +346,7 @@
         <Button
             android:id="@+id/buttoneql"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_equal"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -354,7 +357,7 @@
         <Button
             android:id="@+id/buttonadd"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_add"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -370,7 +373,7 @@
 
     <!--     Row 8 Starts From Here . New in Version 1.3 -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -381,7 +384,7 @@
         <Button
             android:id="@+id/buttonof"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_off"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -395,7 +398,7 @@
         <Button
             android:id="@+id/buttoninterad"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_Inter"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -406,7 +409,7 @@
         <Button
             android:id="@+id/buttonvedioad"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_Vedio"
             android:textSize="30sp"
             android:background="@drawable/button_s"
@@ -417,7 +420,7 @@
         <Button
             android:id="@+id/buttonskin"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="match_parent"
             android:text="@string/_Skins"
             android:textSize="30sp"
             android:background="@color/OperatorsBG"
@@ -429,9 +432,23 @@
 
     </TableRow>
 
+    <!-- Ad banner -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:id="@+id/bannerAdContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4" />
+
+    </TableRow>
+
     <!--     Row 9 Starts From Here -->
     <TableRow
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_weight="20">
@@ -447,19 +464,7 @@
             android:gravity="center_horizontal"/>
 
     </TableRow>
-    <!-- TableRow>
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/banner_AdView"
-            android:layout_width="wrap_content"
-            android:layout_span="4"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/ad_id_banner" />
-
-    </TableRow -->
-
 
 </TableLayout>
+
+</LinearLayout>
